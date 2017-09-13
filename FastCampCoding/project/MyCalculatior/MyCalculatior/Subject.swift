@@ -12,16 +12,31 @@ import Foundation
 
 
 
-class Subject {
+class Subject
+{
     var name:String
     var score: Int = 0
+    var grade: String
     
-    init(name:String) {
+    init(name:String)
+    {
         self.name = name
-    }
-    
-    func setScore(s: Int) {
-        self.score = s
+        
+        func setScore(s: Int)
+        {
+            self.score = s
+            
+            func changeGrade()
+            {
+                if score > 0 && score <= 100
+                {
+                    if score >= 95
+                    {
+                    grade = "A+"
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -40,5 +55,5 @@ class monster1 {
     self.property = property
     self.level = level
     }
-}
 
+}

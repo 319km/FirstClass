@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
    
+        let cal = SubjectCalculation ()
         let math = Subject(name: "수학")
         math.setScore(s: 100)
         let english = Subject(name: "영어")
@@ -26,10 +27,13 @@ class ViewController: UIViewController {
         s1.addSubject(subject: math)
         s1.addSubject(subject: english)
         
-        
+        s1.average = cal.averageCalculation(student: s1)
+        print(s1.average)
     
     }
 
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
