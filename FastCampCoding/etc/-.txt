@@ -1,0 +1,102 @@
+
+// 1번 문제
+
+
+
+
+var testNum1: Int = 11
+var testNum2: Int = -11
+
+if testNum1 < 0 {
+    testNum1 = -testNum1  
+}
+if testNum2 < 0 {
+    testNum2 = -testNum2
+}
+
+
+print(testNum1)
+print(testNum2)
+
+
+
+//func isAbsolute(num: Int) ->Int{
+//    if num < 0{
+//        return -num
+//    }
+ //  else{
+ //   return num
+//    }
+//}
+
+//var anyNumber: Int = -15
+
+//print(isAbsolute(anyNumber))
+
+/*
+2번 문제
+*/
+
+var num1: Int = 15
+var num2:Int = 0
+
+
+var resultNum:Int?
+
+if(num2 == 0){
+    print("나누려는 수가 0입니다. DividedByZeroExceptionError")
+    
+}
+else{
+  resultNum = num1 / num2  
+}
+
+print(resultNum)
+
+
+
+/*
+3번 문제
+*/
+
+var minusNum1: Int = 4
+var minusNum2: Int = 5
+
+var minusResultNum: Int = minusNum1 - minusNum2
+
+// 첫번째 방법
+
+if minusResultNum < 0{
+  minusResultNum = -minusResultNum  
+}
+
+// 두번째 방법
+
+if minusNum1 < minusNum2 {
+    minusResultNum = minusNum2 - minusNum1
+}
+
+print(minusResultNum)
+
+
+
+
+/*
+ 3번문제 변형
+*/
+
+
+var minusNum3: Int = 4
+var minusNum4: Int = 5
+
+if minusNum3 < minusNum4{
+    var temp: Int = 0
+    temp = minusNum3
+    minusNum3 = minusNum4
+    minusNum4 = temp
+}
+
+
+print(minusNum3 - minusNum4)
+
+
